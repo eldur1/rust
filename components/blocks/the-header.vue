@@ -1,6 +1,7 @@
 <template>
   <header>
     Coucou je suis le header
+    <div>Salut</div>
   </header>
 </template>
 

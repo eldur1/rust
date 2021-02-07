@@ -1,13 +1,11 @@
 <template>
   <footer>
-    Coucou je suis le footer
+    <p>Made by Sea of Rust team with ❤️ and a lot of ☕ and 🍵  </p>
   </footer>
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
 <style lang="scss" scoped>

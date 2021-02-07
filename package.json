@@ -21,7 +21,11 @@
   "dependencies": {
     "@nuxtjs/composition-api": "^0.18.1",
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "rellax": "^1.12.1",
+    "tailwindcss": "^2.0.2",
+    "vue-parallaxy": "^1.1.1",
+    "vue-rellax": "^0.2.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
