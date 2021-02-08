@@ -1,8 +1,4 @@
 module.exports = {
-  corePlugins: {
-    // ...
-    maxWidth: false
-  },
   purge: [
     './{layouts,pages,components}/**/*.{js,vue}'
   ],
@@ -31,9 +27,6 @@ module.exports = {
       3: '3.466em',
       118: '118%'
     },
-    extend: {}
-  },
-  variants: {
     extend: {
       maxWidth: {
         s: '316px',

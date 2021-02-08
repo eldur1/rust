@@ -2,7 +2,7 @@
   <nuxt />
 </template>
 
-<style>
+<style lang="css">
 html {
   font-family:
     'Source Sans Pro',
