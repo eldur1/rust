@@ -38,18 +38,26 @@ export default {
     width:40%;
 }
 .content-block::before {
+  left:0;
+  @apply bg-red;
+
+}
+.content-block::before {
   @apply bg-red p-1 ;
   position:absolute;
   content: '';
   top:0px;
   left:0px;
-  right:0px;
   bottom:0px;
   width:150%;
-
+}
+.content-block--right::before {
+  right: 0;
+  width:100%;
 }
 .content-block--right {
   float:right;
+  right:0px;
 }
 .content-block--long::before {
   width:150%;

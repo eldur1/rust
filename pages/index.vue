@@ -19,10 +19,10 @@
       Wipe BP toutes les <span class="text-red">deux semaines</span>
     </a-content-text>
     <div>
-      <a-content-text theme="left" class="mb-40" name="regles">
-        Règlement du serveur :
-      </a-content-text>
-      <div class="rule_block">
+      <div class="rule_block ml-o">
+        <a-content-text theme="left" class="mb-40" name="regles">
+          Règlement du serveur :
+        </a-content-text>
         <ul>
           <li v-for="(rule, index) in rules" :key="index">
             <a-icon class="inline-block" name="done" height="2rem" width="2rem" />
@@ -73,7 +73,14 @@ body {
   margin: 0;
 }
 .rule_block{
-    margin-left:25%;
+    @apply bg-red;
+    display: inline-block;
+    padding:64px;
+    padding-left:25%;
+    max-width: 1074px;
+    left:0;
+    line-height: 48px;
+    padding-bottom: 15%;
 }
 .container {
   margin: 0;
