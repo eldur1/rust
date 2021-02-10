@@ -4,7 +4,7 @@
       <p class="text-center text-red uppercase font-bold text-sm">
         Serveur Rust
       </p>
-      <a-title tag="h1" class="big">
+      <a-title tag="h1" size="big">
         Sea of Rust
       </a-title>
     </div>
@@ -12,7 +12,7 @@
       <p>
         En savoir plus
       </p>
-      <a-icon name="arrow-down" />
+      <a-icon name="arrow-down" size="2rem" />
     </div>
   </div>
 </template>
