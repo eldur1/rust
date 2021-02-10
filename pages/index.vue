@@ -1,31 +1,35 @@
 <template>
   <div>
-    <the-header class="header" />
     <the-hero class="hero" />
-    <a-content-block theme="left" src="/img/ressources.jpg" alt="Un homme qui coupe une hache" />
-    <a-content-text class="mb-40" height="6rem" width="6rem" theme="left" name="trend">
+    <m-content-block theme="left" :src="require('@/assets/img/ressources.jpg')" alt="Un homme qui coupe une hache" />
+    <m-content-text
+      class="mb-40"
+      theme="left"
+      icon-name="trend"
+    >
       Récolte des ressources <span class="text-red">x1.5</span> et crafts accélérés de <span class="text-red">50%</span>
-    </a-content-text>
-
-    <a-content-block theme="right" src="/img/sign.jpg" alt="Une publicité de la série Better Call Saul" />
-    <a-content-text class="mb-40" height="6rem" width="6rem" theme="left" name="plugin">
+    </m-content-text>
+    <m-content-block
+      theme="right"
+      :src="require('~/assets/img/sign.jpg')"
+      alt="Une publicité de la série Better Call Saul"
+    />
+    <m-content-text class="mb-40" theme="left" icon-name="plugin">
       Plugins pour améliorer <span class="text-red">la qualité de jeu</span>
-    </a-content-text>
-    <img src="img/wipe.jpg" class="w-2/5 relative inline-block" alt="Homme courant dans la nature">
-    <a-content-text theme="right" class="mb-40" name="wipe">
-      Wipe toutes les <span class="text-red">semaines</span>
-      <br>
-      <br>
-      Wipe BP toutes les <span class="text-red">deux semaines</span>
-    </a-content-text>
+    </m-content-text>
+    <img :src="require('@/assets/img/wipe.jpg')" class="w-2/5 relative inline-block" alt="Homme courant dans la nature">
+    <m-content-text theme="right" class="mb-40" icon-name="wipe">
+      <p>Wipe toutes les <span class="text-red">semaines</span></p>
+      <p>Wipe BP toutes les <span class="text-red">deux semaines</span></p>
+    </m-content-text>
     <div>
       <div class="rule_block ml-o">
-        <a-content-text theme="left" class="mb-40" name="regles">
+        <m-content-text theme="left" class="mb-40" icon-name="rules">
           Règlement du serveur :
-        </a-content-text>
+        </m-content-text>
         <ul>
           <li v-for="(rule, index) in rules" :key="index">
-            <a-icon class="inline-block" name="done" height="2rem" width="2rem" />
+            <a-icon class="inline-block" name="done" size="2rem" />
             <p class="inline">
               {{ rule }}
             </p>
@@ -33,8 +37,6 @@
         </ul>
       </div>
     </div>
-
-    <the-footer />
   </div>
 </template>
 
@@ -53,7 +55,9 @@ export default {
     ])
 
     return {
-      rules
+      rules,
+      images: 'wipe'
+
     }
   }
 }
@@ -89,7 +93,7 @@ body {
   height: 100%;
   top:0px;
   left:0px;
-  background-image: url('/img/background.jpg');
+  background-image: url('~assets/img/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

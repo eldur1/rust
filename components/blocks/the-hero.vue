@@ -4,9 +4,9 @@
       <p class="text-center text-red uppercase font-bold text-sm">
         Serveur Rust
       </p>
-      <h1 class="text-xxl text-center font-bold leading-7">
+      <a-title tag="h1" class="big">
         Sea of Rust
-      </h1>
+      </a-title>
     </div>
     <div ref="second" class="section section-2 bottom-40 centered">
       <p>

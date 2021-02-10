@@ -1,24 +1,27 @@
 <template>
   <div class="inline-block content-block relative max-w-md" :class="`content-block--${theme}`">
-    <a-icon :name="name" height="6rem" width="6rem" />
-    <a-h2>
+    <a-icon :name="iconName" :size="iconComputedSize" />
+    <a-title tag="h2">
       <slot />
-    </a-h2>
+    </a-title>
   </div>
 </template>
 
 <script>
-import AIcon from './AIcon.vue'
-import AH2 from './AH2.vue'
+import { computed } from '@nuxtjs/composition-api'
+
 export default {
-  components: {
-    AIcon,
-    AH2
-  },
   props: {
-    name: {
+    iconName: {
       type: String,
       required: true
+    },
+    iconSize: {
+      type: String,
+      default: 'big',
+      validator (val) {
+        return ['small', 'big'].includes(val)
+      }
     },
     theme: {
       type: String,
@@ -27,6 +30,20 @@ export default {
       validator (val) {
         return ['left', 'right'].includes(val)
       }
+    }
+  },
+
+  setup (props) {
+    const iconComputedSize = computed(() => {
+      const sizes = {
+        big: '6',
+        small: '2'
+      }
+      return sizes[props.iconSize] + 'rem'
+    })
+
+    return {
+      iconComputedSize
     }
   }
 }
