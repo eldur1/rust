@@ -1,5 +1,11 @@
 <template>
-  <nuxt />
+  <div>
+    <the-header class="header" />
+    <main>
+      <nuxt />
+    </main>
+    <the-footer />
+  </div>
 </template>
 
 <style lang="css">

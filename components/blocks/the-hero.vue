@@ -4,15 +4,15 @@
       <p class="text-center text-red uppercase font-bold text-sm">
         Serveur Rust
       </p>
-      <h1 class="text-xxl text-center font-bold leading-7">
+      <a-title tag="h1" size="big">
         Sea of Rust
-      </h1>
+      </a-title>
     </div>
     <div ref="second" class="section section-2 bottom-40 centered">
       <p>
         En savoir plus
       </p>
-      <a-icon name="arrow-down" />
+      <a-icon name="arrow-down" size="2rem" />
     </div>
   </div>
 </template>

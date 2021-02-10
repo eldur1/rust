@@ -20,10 +20,13 @@
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.19.1",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9.8.6",
     "core-js": "^3.8.2",
     "nuxt": "^2.14.12",
+    "postcss": "^7.0.35",
     "rellax": "^1.12.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
     "vue-parallaxy": "^1.1.1",
     "vue-rellax": "^0.2.0"
   },
@@ -32,7 +35,6 @@
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/svg-sprite": "^0.5.2",
     "@nuxtjs/tailwindcss": "^3.4.2",
-    "autoprefixer": "^9",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.19.0",
     "eslint-config-standard": "^16.0.2",
@@ -42,7 +44,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-vue": "^7.4.1",
     "husky": "^4.3.8",
-    "lint-staged": "^10.5.4",
-    "postcss": "^7"
+    "lint-staged": "^10.5.4"
   }
 }
