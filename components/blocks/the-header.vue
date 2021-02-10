@@ -1,6 +1,6 @@
 <template>
   <header>
-    Coucou je suis le header
+    Il y aura des boutons ici
     <div>Salut</div>
   </header>
 </template>
