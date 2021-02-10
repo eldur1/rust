@@ -1,6 +1,6 @@
 <template>
   <i class="a-icon">
-    <svg-icon :name="name" height="1em" width="1em" />
+    <svg-icon :name="name" :height="height" :width="width" />
   </i>
 </template>
 
@@ -10,6 +10,16 @@ export default {
     name: {
       type: String,
       required: true
+    },
+    height: {
+      type: String,
+      required: false,
+      default: '2rem'
+    },
+    width: {
+      type: String,
+      required: false,
+      default: '2rem'
     }
   }
 }
