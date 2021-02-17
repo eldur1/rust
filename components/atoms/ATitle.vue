@@ -16,7 +16,7 @@ export default {
       type: String,
       default: 'medium',
       validator (val) {
-        return ['big', 'medium'].includes(val)
+        return ['big', 'medium', 'small'].includes(val)
       }
     }
   },
@@ -25,7 +25,8 @@ export default {
     const classNames = computed(() => {
       const sizes = {
         medium: 'text-lg leading-118',
-        big: 'text-xxl text-center leading-7'
+        big: 'text-xxl text-center leading-7',
+        small: 'text-sm'
       }
       return sizes[props.size]
     })

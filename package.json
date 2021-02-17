@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "dev:host": "nuxt --hostname '0' --port 8000",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -20,15 +21,18 @@
   },
   "dependencies": {
     "@nuxtjs/composition-api": "^0.19.1",
+    "@soerenmartius/vue3-clipboard": "^0.1.1",
     "@tailwindcss/postcss7-compat": "^2.0.3",
     "autoprefixer": "^9.8.6",
+    "clipboard": "^2.0.6",
     "core-js": "^3.8.2",
     "nuxt": "^2.14.12",
     "postcss": "^7.0.35",
     "rellax": "^1.12.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
     "vue-parallaxy": "^1.1.1",
-    "vue-rellax": "^0.2.0"
+    "vue-rellax": "^0.2.0",
+    "vue3-clipboard": "^1.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",

@@ -1,0 +1,14 @@
+[
+        "/clan create <NOMDECLAN>",
+        "Créer un clan",
+        "/clan invite <PSEUDO>",
+        "Invite quelqu’un dans son clan",
+        "/clan join <NOMDUCLAN>",
+        "Rejoint un clan qui vous a invité",
+        "/clan kick <PSEUDO>",
+        "Ejecte un joueur de votre clan",
+        "/clan promote <PSEUDO>",
+        "Promeût un un membre du clan modérateur ",
+        "/clan leave <NOMDECLAN>",
+        "Quitte le clan"
+]

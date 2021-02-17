@@ -1,6 +1,6 @@
 <template>
-  <div class="inline-block content-block relative max-w-md" :class="`content-block--${theme}`">
-    <a-icon :name="iconName" :size="iconComputedSize" />
+  <div class="inline-block content-text relative" :class="`content-text--${theme}`">
+    <a-icon class="a-icon" :name="iconName" :size="iconComputedSize" />
     <a-title tag="h2">
       <slot />
     </a-title>
@@ -15,6 +15,10 @@ export default {
     iconName: {
       type: String,
       required: true
+    },
+    list: {
+      type: String,
+      default: 'empty'
     },
     iconSize: {
       type: String,
@@ -50,24 +54,13 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.content-block {
-    width:254px;
-    margin-left:25%;
+.content-text {
+    max-width:258px;
+    line-height: 141px;
+    margin:auto;
 }
-
-.content-block--right {
-}
-.content-block--long::before {
-  width:150%;
-
-}
-.img-block--left {
-  top: -40px;
-  left: 42%;
-}
-.img-block--right {
-  top:-16px;
-  left:-16px;
+.a-icon {
+  margin-top:40px;
 }
 
 </style>
