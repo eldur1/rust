@@ -23,6 +23,7 @@ module.exports = {
       1: '1.375em',
       2: '2em',
       3: '3.466em',
+      7: '90px',
       118: '118%'
     },
     extend: {
@@ -31,6 +32,7 @@ module.exports = {
         2: '330px'
       },
       maxWidth: {
+        xs: '258px',
         s: '316px',
         m: '431px',
         l: '566px'

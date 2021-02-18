@@ -25,5 +25,8 @@ export default {
 .header {
   z-index: 4;
   float: right;
+  width:100%;
+  height:52px;
+
 }
 </style>

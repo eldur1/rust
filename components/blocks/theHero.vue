@@ -8,7 +8,7 @@
         <a-title tag="h1" size="big">
           Sea of Rust
         </a-title>
-        <button type="button" class="bg-red font-bold inline-block pt-1 pb-1 pr-2 pl-2 align-middle" @click="doCopy">
+        <button type="button" class="bg-red mt-12 font-bold inline-block pt-1 pb-1 pr-2 pl-2 align-middle" @click="doCopy">
           92.118.16.132:28025
           <a-icon name="paste" />
         </button>

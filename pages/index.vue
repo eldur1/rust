@@ -14,10 +14,10 @@
       </div>
       <div class="block block-2">
         <div class="m-auto">
-          <m-content-text class="min-w-2 mb-2 ml-16" theme="left" icon-name="plugin">
+          <m-content-text class="lg:min-w-2 mb-2 ml-16" theme="left" icon-name="plugin">
             Plugins pour améliorer la <em>qualité de jeu</em>
           </m-content-text>
-          <m-list :list="plugins" />
+          <m-list class="m-auto lg:m-0 whitespace-nowrap max-w-xs" :list="plugins" />
         </div>
 
         <m-content-block
@@ -35,8 +35,8 @@
         </m-content-text>
       </div>
       <div class="block block-4">
-        <div class="rule_block">
-          <m-content-text class="min-w-2 ml-0 mt-40" icon-name="rules">
+        <div class="rule_block lg:min-w-2 w-full ">
+          <m-content-text class="ml-0 mt-40" icon-name="rules">
             Règlement du serveur :
           </m-content-text>
           <m-list class="min-w-1 mt-2" :list="rules" icon-name="done" />
@@ -175,11 +175,6 @@ p {
 }
 .content {
   top:45%;
-}
-.header {
-  position: fixed;
-  width:100%;
-  height:52px;
 }
 em {
   @apply text-red;
