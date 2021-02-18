@@ -13,6 +13,10 @@ module.exports = {
       xl: '47px',
       xxl: '102px'
     },
+    fontFamily: {
+      sans: ['Work Sans', 'sans-serif'],
+      untitled: ['Untitled', 'sans-serif']
+    },
     colors: {
       red: '#B63421',
       grey: '#101114',
@@ -27,6 +31,9 @@ module.exports = {
       118: '118%'
     },
     extend: {
+      backgroundImage: theme => ({
+        backgroundHero: "url('~assets/img/background.jpg')"
+      }),
       minWidth: {
         1: '360px',
         2: '330px'

@@ -1,8 +1,8 @@
 <template class="text-center">
   <div>
-    <div class="root container max-w-full">
-      <div ref="first" class="section section-1 content centered">
-        <p class="work-sans text-center text-red uppercase font-bold text-sm">
+    <div class="root bg-backgroundHero h-screen bg-cover max-w-full text-center flex content-center align ">
+      <div ref="first" class="section section-1 m-auto">
+        <p class="font-sans text-center text-red uppercase font-bold text-sm">
           Serveur Rust
         </p>
         <a-title tag="h1" size="big">
@@ -17,8 +17,8 @@
         </p>
       </div>
     </div>
-    <div ref="second" class="section section-2 bottom-1 centered">
-      <p class="font-bold work-sans">
+    <div ref="second" class="section section-2 bottom-3 absolute left-1/2 transform -translate-x-1/2 text-center">
+      <p class="font-bold font-sans">
         En savoir plus
       </p>
       <a-icon name="arrow-down" size="2rem" />
@@ -46,7 +46,5 @@ export default {
 }
 </script>
 <style lang="postcss" scoped>
-.work-sans {
-  font-family: 'Work Sans', sans-serif;
-}
+
 </style>

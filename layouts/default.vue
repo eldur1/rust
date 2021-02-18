@@ -20,7 +20,6 @@
   font-family: "Work Sans";
   src: url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 }
-
 html {
     font-size: 16px;
     word-spacing: 1px;
@@ -29,5 +28,15 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+}
+body {
+  @apply bg-grey;
+  color:white;
+  height: 100%;
+  margin: 0;
+}
+
+p {
+  font-family: 'Untitled', sans-serif;
 }
 </style>

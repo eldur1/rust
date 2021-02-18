@@ -57,7 +57,6 @@ export default {
 .content-text {
     max-width:258px;
     line-height: 141px;
-    margin:auto;
 }
 .a-icon {
   margin-top:40px;

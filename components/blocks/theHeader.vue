@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+  <header class="header absolute">
     <div class="float-right m-2">
       <a target="_blank" href="https://just-wiped.net/rust_servers/1369531">
         <button type="button" class="bg-red font-bold inline-block pt-1 pb-1 pr-2 pl-2 align-middle">

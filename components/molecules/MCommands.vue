@@ -1,12 +1,11 @@
 <template>
-  <div class="content">
+  <div class="content inline-flex flex-col">
     <a target="_blank" :href="link">
       <a-title size="small" class="list-title pt-2 pb-2" tag="h3">
         <slot />
       </a-title>
-      <br>
     </a>
-    <ul>
+    <ul class="inline-block">
       <li v-for="(item, index) in list" :key="index" class="list">
         <p class="inline">
           {{ item }}
@@ -39,11 +38,8 @@ export default {
     padding:6px 10px 6px 10px;
     display: inline-block;
 }
-.content {
-  max-width: 68%;
-}
 li {
-  display: inline-block;
+  display: inline;
 }
 li:nth-child(odd) {
     font-family: 'Work Sans';
