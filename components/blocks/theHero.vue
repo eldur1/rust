@@ -47,6 +47,6 @@ export default {
 </script>
 <style lang="postcss" scoped>
 .work-sans {
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', sans-serif;
 }
 </style>
